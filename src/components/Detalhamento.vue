@@ -21,7 +21,9 @@ export default {
 
     data() {
         return {
+          //Puxando o card do meu 'params' passdo no componente 'ListaDeCharacters'
             card : this.$route.params.card,
+            number: this.$route.params.number
             
         }
     },
