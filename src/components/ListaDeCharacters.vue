@@ -1,6 +1,5 @@
 <template>
   <b-row >
-
     <AdicionarNovo/>
 <b-row>
     <h1 class="lista-cards">Lista de Cards MAGIC THE GATHERING</h1>

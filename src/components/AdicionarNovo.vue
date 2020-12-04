@@ -21,7 +21,7 @@
           ></b-form-input>
         </b-input-group>
 
-        <b-button @click="addCard()" variant="primary">Save</b-button>
+        <b-button @click="criarCard()" variant="primary">Save</b-button>
       </b-form>
     </b-row>
   </b-row>
@@ -42,28 +42,25 @@ export default {
   methods: {
     ...mapActions(["addCard"]),
 
-    addCard() {
+    criarCard() {
       let novoCard = {
         name: this.name,
-        manaCost: "{6}{R}{R}",
-        cmc: 8,
-        colors: ["Red"],
-        colorIdentity: ["R"],
-        type: "Creature — Giant",
-        types: ["Creature"],
-        subtypes: ["Giant"],
+        manaCost: "",
+      
+        colors: [],
+        
+        type: "",
+        types: [],
+        subtypes: [],
         rarity: this.raridade,
-        set: "10E",
-        setName: "Tenth Edition",
+        set: "",
+        setName: "",
         text:
-          "{R}, Sacrifice Bloodfire Colossus: It deals 6 damage to each creature and each player.",
-        flavor: "It took all its strength to contain the fire within.",
-        artist: "Greg Staples",
-        number: "191",
-        power: "6",
-        toughness: "6",
-        imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129709&type=card",
+          "",
+        flavor: "",
+        artist: "",
+        number: "",
+        
       };
       this.addCard(novoCard)
       alert('Adicionado com sucesso total!!!')

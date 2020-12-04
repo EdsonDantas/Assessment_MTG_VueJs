@@ -7,7 +7,7 @@
       </b-card-text>
       <b-card-text> <strong>Artista:</strong> {{card.artist}}</b-card-text>
     <b-card-text> <strong> Texto original: </strong> {{card.originalText}}</b-card-text>
-    <b-card-text> <strong> Tipo: </strong> {{card.originalType}}</b-card-text>
+    <b-card-text> <strong> Tipo: </strong> {{card.types[0]}}</b-card-text>
     <b-card-text> <strong> Edição Original: </strong> {{card.set}}</b-card-text>
     <b-card-text> <strong> Raridade: </strong> {{card.rarity}}</b-card-text>
     <b-card-text > <strong> Cores: </strong> {{card.colors}} - <strong> Prints: </strong>{{card.printings.length}}</b-card-text>
