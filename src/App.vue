@@ -24,7 +24,6 @@ export default {
 <style>
 .principal {
   background-image: url('./assets/wallpaper.jpg');
-  width:100%;
   
 }
 </style>

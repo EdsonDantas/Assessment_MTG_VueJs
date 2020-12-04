@@ -10,7 +10,7 @@
     <b-card-text> <strong> Tipo: </strong> {{card.originalType}}</b-card-text>
     <b-card-text> <strong> Edição Original: </strong> {{card.set}}</b-card-text>
     <b-card-text> <strong> Raridade: </strong> {{card.rarity}}</b-card-text>
-    <b-card-text > <strong> Cores: </strong> {{card.colorIdentity}} - <strong> Prints: </strong>{{card.printings.length}}</b-card-text>
+    <b-card-text > <strong> Cores: </strong> {{card.colors}} - <strong> Prints: </strong>{{card.printings.length}}</b-card-text>
     </b-card>
   </b-row>
 </template>

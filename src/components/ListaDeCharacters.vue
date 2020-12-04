@@ -1,13 +1,16 @@
 <template>
-  <b-row>
-    <h1 style="padding: 20px">Lista de Cards MAGIC THE GATHERING</h1>
+  <b-row >
 
-    <b-row>
+    <AdicionarNovo/>
+<b-row>
+    <h1 class="lista-cards">Lista de Cards MAGIC THE GATHERING</h1>
+    </b-row>
+    <b-row >
       <b-card-group  deck>
         <b-card
           v-for="c in allCharacters"
           :key="c.number"
-          style="min-width: 15rem; max-width: 15rem; margin: 12px"
+          style="min-width: 14rem; max-width: 14rem; margin: 12px"
           border-variant="primary"
           :header="c.name"
           header-bg-variant="dark"
@@ -36,10 +39,14 @@
 </template>
 
 <script>
+
+import AdicionarNovo from './AdicionarNovo.vue';
 import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "ListaDeCharacters",
+
+   components: { AdicionarNovo },
 
   computed: mapGetters(["allCharacters"]),
 
@@ -55,8 +62,8 @@ export default {
 
 <style scoped>
 h1 {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  left: 200px;
   color: rgb(246, 249, 250);
   text-shadow: black 0.1em 0.1em 0.2em
 }
@@ -72,6 +79,9 @@ button {
 button:hover {
   transform: scale(1.2);
   transition: ease 0.5s;
+}
+.lista-cards {
+  margin-top: 350px;
 }
 .card {
   display: flex;

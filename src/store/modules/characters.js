@@ -21,6 +21,9 @@ const actions = {
         });
     },
 
+    addCard({commit}, card){
+        commit('addCard', card)
+    },
     deleteCard({commit}, number){
         commit('deleteCard', number)
     },
@@ -31,6 +34,7 @@ const mutations = {
     //mutation pega as informações  e escreva lá na minha lista que estava vazia.
     //precisei adicionar o cards no 'data.cards', pq minha requisição me retornava um objeto com uma lista gigante. 
     getCharacters: (state, data) => (state.characters = data.cards),
+    addCard: (state, data) => state.characters.push(data.cards),
 
     //minha lista de usuários recebe minha lista de usuários menos o usuário com o 'number' selecionado no click
     deleteCard: (state, number) => (state.characters = state.characters.filter(c => c.number !== number))
