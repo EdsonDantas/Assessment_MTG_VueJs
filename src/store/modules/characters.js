@@ -10,13 +10,15 @@ const actions = {
             commit('getCharacters', response.data)
         });
     },
-
+//adicionando novos 'Cards'
     addCard({ commit }, card) {
         commit('addCard', card)
     },
+    //Deletando Cards
     deleteCard({ commit }, number) {
         commit('deleteCard', number)
     },
+
 }
 
 //modifica o meu state
@@ -27,7 +29,9 @@ const mutations = {
     addCard: (state, data) => state.characters.push(data),
 
     //minha lista de usuários recebe minha lista de usuários menos o usuário com o 'number' selecionado no click
-    deleteCard: (state, number) => (state.characters = state.characters.filter(c => c.number !== number))
+    deleteCard: (state, number) => (state.characters = state.characters.filter(c => c.number !== number)),
+
+    
 }
 
 

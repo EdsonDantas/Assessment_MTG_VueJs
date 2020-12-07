@@ -14,7 +14,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  neme: 'Menu'
+};
 </script>
 
 <style>
