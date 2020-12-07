@@ -45,21 +45,15 @@ export default {
     criarCard() {
       let novoCard = {
         name: this.name,
-        manaCost: "",
-      
-        colors: [],
-        
-        type: "",
-        types: [],
-        subtypes: [],
+        imageUrl:'https://blog.influx.com.br/storage/app/uploads/public/67d/18f/2fd/67d18f2fdf601e40e21e8dc4e70247ca62c6ac83.jpg',
+        colors: ['pardo'],
+        types: ['Nordestino'],
         rarity: this.raridade,
-        set: "",
-        setName: "",
-        text:
-          "",
-        flavor: "",
-        artist: "",
+        set: "Campina Grande - PB",
+        originalText:"Melhor cair em contradição do que do 8º andar.",
+        artist: "Minha Mãe",
         number: "",
+        printings: ['campina grande', 'rio de janeiro', 'vancouver']
         
       };
       this.addCard(novoCard)

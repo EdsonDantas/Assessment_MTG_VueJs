@@ -1,5 +1,5 @@
 <template>
-  <b-container class="principal">
+  <b-container >
     <Menu/>
     <router-view />
   </b-container>
@@ -22,8 +22,5 @@ export default {
 </script>
 
 <style>
-.principal {
-  background-image: url('./assets/wallpaper.jpg');
-  
-}
+
 </style>

@@ -5,6 +5,9 @@
         <b-nav-item >
           <router-link tag="nav" to="/">Lista De Cards</router-link>
           </b-nav-item>
+        <b-nav-item >
+          <router-link tag="nav" to="/formulario">Formulário</router-link>
+          </b-nav-item>
       </b-navbar-nav>
       </b-navbar>
   </b-row>

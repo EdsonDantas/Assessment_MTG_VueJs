@@ -32,7 +32,7 @@ const mutations = {
 
 
 const getters = {
-    //esse é meu mapGetters, que olha pro minha variável 'state' e me retorna a lista de Cartas/Personagens. 
+    //esse é meu mapGetters, que olha pra minha variável 'state' e me retorna a lista de Cartas/Personagens. 
     allCharacters: state => state.characters
 }
 

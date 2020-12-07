@@ -1,5 +1,5 @@
 <template>
-  <b-row >
+  <b-row class="principal">
     <AdicionarNovo/>
 <b-row>
     <h1 class="lista-cards">Lista de Cards MAGIC THE GATHERING</h1>
@@ -16,6 +16,10 @@
           header-text-variant="white"
           align="center"
         >
+        <p><strong>Tipo:</strong> {{c.types[0]}}</p>
+        <b-button variant="success"><strong>Disp:</strong> {{c.number}}</b-button>
+      
+
         <img style="width: 90%;" :src="c.imageUrl" :alt="c.name">
           <!--Aqui digo que, clicando no conteúdo do 'b-button', eu vou para (to) 'detalharCard'-->
           <!--'number: c.number' => passa o number para minha 'rota nomeada'.
@@ -56,10 +60,15 @@ export default {
   created() {
     this.getCharacters();
   },
+
 };
 </script>
 
 <style scoped>
+.principal {
+  background-image: url('../assets/wallpaper.jpg');
+  
+}
 h1 {
   position: relative;
   left: 200px;
@@ -80,7 +89,7 @@ button:hover {
   transition: ease 0.5s;
 }
 .lista-cards {
-  margin-top: 350px;
+  margin-top: 150px;
 }
 .card {
   display: flex;
