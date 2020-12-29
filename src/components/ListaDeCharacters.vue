@@ -17,7 +17,8 @@
           align="center"
         >
           <p><strong>Tipo:</strong> {{ c.types[0] }}</p>
-          <b-button v-if="c.cmc > 1" variant="success"
+
+          <!-- <b-button v-if="c.cmc > 1" variant="success"
             ><strong>Disp:</strong> {{ c.cmc }}</b-button
           >
           <b-button v-else-if="c.cmc == 1" variant="warning"
@@ -25,7 +26,7 @@
           >
           <b-button v-else variant="danger"
             ><strong>Esgotado:</strong> {{ c.cmc }}</b-button
-          >
+          > -->
 
           <img style="width: 90%" :src="c.imageUrl" :alt="c.name" />
 
@@ -48,6 +49,7 @@
             >Deletar <b-icon icon="trash-fill"></b-icon
           ></b-button>
         </b-card>
+       
       </b-card-group>
     </b-row>
   </b-row>
@@ -61,13 +63,15 @@ export default {
   name: "ListaDeCharacters",
   data() {
     return {
-      carrinhbo:[],
+      //A data de criação não mais se faz necessária.
+       //dataCriacao: new Date().getDate()+"/"+(new Date().getMonth()+1)+"/"+new Date().getFullYear(),
     };
   },
 
   components: { AdicionarNovo },
 
   computed: mapGetters(["allCharacters"]),
+ 
 
   //essas functions estão na pasta .store/modules/characters.js'
   methods: mapActions(["getCharacters", "deleteCard"]),
@@ -108,7 +112,7 @@ button:hover {
 .card {
   display: flex;
   position: relative;
-  left: 85px;
+  left: 40px;
 }
 img {
   transform: scale(0.96);

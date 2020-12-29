@@ -16,7 +16,7 @@ export default new VueRouter({
             component: ListaDeCharacters
         },
         {
-            //o componente passado com '/' é renderizado assim que iniciamos a aplicação, sem precisar ser importado App.vue
+            
             path: '/detalharCard/:number',
             name: 'detalharCard',
             component: Detalhamento
